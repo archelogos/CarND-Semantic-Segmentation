@@ -150,8 +150,8 @@ def run():
     runs_dir = './runs'
 
     # hyperparams
-    epochs = 15
-    batch_size = 1
+    epochs = 20
+    batch_size = 8
 
     tests.test_for_kitti_dataset(data_dir)
     # LOGS to DEBUG LEVEL
@@ -170,7 +170,7 @@ def run():
     # jit_level = tf.OptimizerOptions.ON_1
     # config.graph_options.optimizer_options.global_jit_level = jit_level
 
-    with tf.Session(config=config) as sess:
+    with tf.Session() as sess:
 
         # Path to vgg model
         vgg_path = os.path.join(data_dir, 'vgg')
