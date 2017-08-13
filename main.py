@@ -151,7 +151,7 @@ def run():
 
     # hyperparams
     epochs = 20
-    batch_size = 8
+    batch_size = 1
 
     tests.test_for_kitti_dataset(data_dir)
     # LOGS to DEBUG LEVEL
