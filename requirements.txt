@@ -2,3 +2,4 @@ numpy==1.13.1
 scipy==0.19.1
 tensorflow==1.2
 tqdm==4.15.0
+Pillow==4.2.1
